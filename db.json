@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "cars": [
+    {
+      "name": "Mercyy",
+      "id": 13
+    },
+    {
+      "name": "Tesla",
+      "id": 15
+    },
+    {
+      "name": "Tesla",
+      "id": 16
+    }
+  ]
+}

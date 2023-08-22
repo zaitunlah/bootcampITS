@@ -1,0 +1,155 @@
+
+<script>
+    const biodata = {
+        nama: 'budi',
+        alamat: {
+            jalan: 'Jl. Teknik Kimia' ,
+            kelurahan: 'Keputih',
+            kecamatan: 'Sukolilo',
+            kota: 'Surabaya',
+            provinsi: 'Jawa Timur',
+        },
+        birthdate: '2001/03/6',
+        cekUmur: (dateString) => {
+            var today = new Date()
+            var birthdate = new Date(dateString)
+            console.log(birthdate)
+            var age = today.getFullYear() - birthdate.getFullYear()
+            var m = today.getMonth() - birthdate.getMonth()
+            if (m < 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
+            age--
+        }
+        return age
+        // cekUmur: (a)=> {
+        //     return a * 12
+            // console.log(10)
+        }
+    }
+    biodata.vaksin = true
+    const mahasiswa = ['budi', 'andi', 'hilmi'] //index dimulai 0
+    console.log(mahasiswa)
+    const fulladdress = Object.keys(biodata.alamat).map(
+        (key) => {
+            return biodata.alamat[key]
+        })
+
+    console.log('nama mahasiswa', mahasiswa[0])
+    console.log('semua mahasiswa', mahasiswa.join(','))
+    console.log(biodata.nama)
+    console.log(biodata.cekUmur(biodata.birthdate))
+    console.log(fulladdress.join(', '))
+
+    mahasiswa.push('anita') //tambah data di index akhir
+    mahasiswa.splice(1,0, 'anto') //hapus data index ke-1 sebanyak 0 dan ganti dengan anto
+    // console.log(mahasiswa)
+    // mahasiswa.splice(3,2)
+    console.log(mahasiswa)
+
+
+
+        console.log(mahasiswa)
+        mahasiswa.splice(2,1, 'Wildan')
+        console.log(mahasiswa)
+        mahasiswa[2] = 'Jaka'
+        mahasiswa[5] = 'Isla'
+
+
+        delete biodata.nama
+        console.log(mahasiswa)
+    // const {nama, ...data} = biodata
+    // const copyBiodata = {...biodata}
+    // const copyBiodata2 = biodata
+    // biodata.umur = 17
+    // console.log(copyBiodata, copyBiodata2, biodata)
+    // console.log(JSON.stringfy(biodata))
+
+    // let arr = [3, 5, 1];
+    // const max = Math.max(...arr)
+    // console.log(arr, max)
+
+        // let c = 10
+    // const angka1 = prompt('Input angka 1')
+    // // const angka2 = prompt('Input angka 2')
+    // function penjumlahan(a, b) {
+    //     return parseInt(a) + parseInt(b) + c
+    // }
+    // // function pengurangan(a, b) {
+    // //     return a - b
+    // // }
+    // console.log(penjumlahan(1, 2))
+    // const hasil = penjumlahan (angka1, angka2)
+    // const hasil2 = pengurangan(hasil+10, hasil)
+    // console.log(hasil2)
+</script>
+
+<script>
+    // const mahasiswa = ['budi', 'andi', 'helmi']
+    // // for (let i = 0; i < mahasiswa.length; i++) {
+    // //     const data = mahasiswa[i];
+    // //     console.log(data)
+    // // }
+    // function test(asd) {}
+    // const test2 = () => {}
+
+    // // mahasiswa.map((nama)=>{
+    // //     console.log(nama)
+    // // })
+
+
+
+
+    // const newMahasiswa = mahasiswa.filter((nama) => {
+    //     if (nama.toLowerCase().startsWith('a')) {
+    //         return nama
+    //     }
+    // })
+    // console.log(newMahasiswa)
+
+
+</script>
+
+
+<script>
+//     console.log('Hello World')
+// let var1 = 'Test'
+// const var2 = "Hello!"
+// var var3 = "Piye Kabare"
+// let nama //tundefined
+// let umur = 22 //ada data kosong
+// let alamat = '' //tdk ada data
+// var1 = 'selamat malam'
+// var2 = 'Hallo Zaitun'
+// akuvariable = 'Kabarku Apik'
+// console.log(typeof nama)
+// console.log(typeof umur)
+// console.log(typeof alamat)
+// let SudahMakan = true
+// prompt("test")
+// let isboss = confirm('Are You Boss?')
+//let age = prompt('Years old?', 22);
+
+// console.log(isboss) 
+
+// if(umur >= 22) {
+//     console.log('Ya Benar')
+// } else {
+//     console.log('Saya belum')
+// }
+
+// let age = prompt('Years old?', 22);
+// let pekerja = prompt('Apakah Pekerjaan anda?', 'Mahasiswa')
+// if(pekerja == 'Mahasiswa' && (age > 20 || age<30)){
+//     // console.log(pekerja, age)
+//     age = parseInt(age) + 20
+//     alert(`Anda adalah Mahasiswa ${age} tahun`)
+// } else if(pekerja == 'PNS'){
+//     console.log('Saya Seorang', pekerja)
+// } else {
+//     console.log('Pekerjaan Tidak Diketahui')
+// }
+
+
+
+
+
+</script>
